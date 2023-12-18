@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/template.css" />
+    <script src="/script/script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/icon.png"
+      type="image/x-icon"
+    />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <title>Page Craft</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="/assets/images/icon.png" alt="Page Craft Logo" />
+      </div>
+      <nav class="nav">
+        <a href="/" class="nav-item">Home</a>
+        <a href="/pages/about.html" class="nav-item">About</a>
+        <a href="/pages/contact.html" class="nav-item">Contact</a>
+        <a href="/templates/" class="nav-item">Templates</a>
+      </nav>
+    </header>
+    <div class="template-page">
+      <div class="student-form" id="userDetailing">
+        <div id="userInputs">
+          <h2 class="DetailHeadLine">Enter Your Details</h2>
+          <div class="namesection">
+            <label for="nameInput">Name:</label>
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Example: Swadhin Panda"
+            />
+          </div>
+          <div class="rollsection">
+            <label for="rollInput">Roll No.:</label>
+            <input
+              type="text"
+              id="rollInput"
+              placeholder="Example: S04521CSC002"
+            />
+          </div>
+          <div class="semsection">
+            <label for="semInput">Semester:</label>
+            <input type="text" id="semInput" placeholder="Example: 3rd" />
+          </div>
+          <div class="papersection">
+            <label for="paperInput"> Paper Name: </label>
+            <input type="text" id="paperInput" placeholder="Example: Java" />
+          </div>
+          <div>
+            <button id="generateCard" onclick="generateCard()" class="btn">
+              Generate Card
+            </button>
+            <!-- <button id="downloadCard" onclick="downloadCard()" class="btn">
+              Download
+            </button> -->
+          </div>
+        </div>
+      </div>
+      <div class="center-line"></div>
+      <div class="result-section" id="result-section">
+        <div class="output">
+          <div class="paperName">
+            <h2 id="paperName"></h2>
+          </div>
+          <div class="submittedText">
+            <h2>Submitted By:</h2>
+          </div>
+          <div class="studentName">
+            <h2 id="studentName"></h2>
+          </div>
+          <div class="studentRoll">
+            <h2>Roll.- <span id="studentRoll"></span></h2>
+          </div>
+          <div class="studentClass">
+            <h2>+3 <span id="studentClass"></span> Semester CS</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>
