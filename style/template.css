@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&family=Nunito:wght@300;500;700&family=Yanone+Kaffeesatz:wght@300;600&display=swap');
+/* font-family: 'Lexend', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif; */
+.container {
+  display: flex;
+  flex-direction:
+   column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 12rem);
+}
+.template-head {
+  padding: 2rem;
+}
+.template-section {
+  text-align: center;
+  /* background: #000; */
+  display: flex;
+  gap: 1.4rem;
+  /* flex-direction: column; */
+  /* height: 100vh; */
+}
+.template-box img {
+  width: 25rem;
+}
+.student-form {
+  /* margin: 2rem; */
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+.template-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: calc(100vh - 12rem);
+}
+.center-line {
+  width: 0.2rem;
+  background-color: gray;
+  border-radius: 1rem;
+  height: 50%;
+}
+#userInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+#userInputs div {
+  display: flex;
+  flex-direction: column;
+}
+#userInputs input {
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 21rem;
+  padding: 0.5rem;
+}
+.result-section {
+ background-image: url(/assets/designs/template1.png);
+ background-size: cover;
+ height: 30rem;
+ width: 20rem;
+ position: relative;
+ /* visibility: hidden; */
+ 
+}
+.result-section.two{
+  background-image: url(/assets/designs/template2.png);
+}
+.result-section.two *{
+  font-family: 'Nunito', sans-serif !important;
+}
+.output{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: .75rem;
+}
+.output div{
+  position: absolute;
+}
+.submittedText{
+  top: 22.5rem;
+  font-size: 0.5rem;
+}
+.paperName{
+  position: absolute;
+  top: 13.5rem;
+}
+.studentName{
+  top: 23.5rem;
+}
+.studentRoll{
+  top: 25rem;
+}
+.studentClass{
+  top: 26.5rem;
+}
+#downloadCard{
+  display: none;
+}
+button{
+  color: white;
+  background: var(--blue);
+  border: none;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+@media (max-width: 768px) {
+  .template-box img {
+    width: 18rem;
+  }
+  .container {
+    height: calc(100vh - 10rem);
+  }
+  .template-page {
+    flex-direction: column;
+  }
+  .student-form {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #userInputs{
+    gap: 1.5rem;
+  }
+  #userInputs input{
+    width: 28rem;
+    height: 4rem;
+  }
+  .center-line {
+    display: none;
+  }
+  .result-section {
+    display: none;
+    position: absolute;
+    top: 80rem;
+    /* padding: 10rem; */
+  }
+  button{
+    padding: 1rem;
+  }
+
+}

@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Gugi Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gugi Regular"),
+    url("/assets/fonts/Gugi-Regular.woff") format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gugi Regular";
+  color: black;
+  --red: #d7000f;
+  --blue: #324681;
+  --blueHover: #1a264d;
+}
+html {
+  font-size: 62.5%;
+  background: url(/assets/images/bg2.jpg);
+}
+.navbar {
+  background-color: azure;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  /* height: 2rem; */
+}
+.logo img {
+  width: 3.5rem;
+}
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav-item.active{
+  color:var(--red);
+}
+a {
+  text-decoration: none;
+}
+.nav a {
+  transition: all 0.3s ease-in-out;
+}
+.nav a:hover {
+  color: var(--red);
+}
+.main {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80vh;
+  max-width: 90%;
+}
+.main .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main .left span:first-child {
+  font-size: 2.5rem;
+}
+.main .left h2 {
+  font-size: 6rem;
+}
+.main .left p {
+  font-size: 2rem;
+  /* padding-bottom: 1.5rem; */
+}
+.right img {
+  width: 40rem;
+}
+.btn-group {
+  display: flex;
+  gap: 1.8rem;
+}
+.btn {
+  background-color: #324681;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--blueHover);
+}
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0.01rem 0.01rem 0.2rem rgba(0, 0, 0, 0.524);
+}
+.template-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.page{
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .nav{
+    gap: 1.5rem;
+  }
+  .main {
+    flex-direction: column-reverse;
+    max-width: 95%;
+  }
+  .main .left {
+    width: 80%;
+  }
+  .btn-group {
+    gap: 1.2rem;
+  }
+  .btn-group .btn {
+    font-size: 1.6rem;
+  }
+}
